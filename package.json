@@ -12,9 +12,7 @@
   },
   "scripts": {
     "start": " webpack serve --hot --inline --content-base ./build",
-    "build": "webpack --progress",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "webpack --progress"
   },
   "eslintConfig": {
     "extends": [
