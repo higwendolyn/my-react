@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^4.15.4",
     "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.26.0",
     "react": "^17.0.2",
@@ -36,6 +37,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^5.3.1",
+    "sass-loader": "^11.0.1",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"

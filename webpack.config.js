@@ -38,7 +38,10 @@ module.exports = {
             test: /\.css$/,
             use: ['style-loader', 'css-loader']
         }, {
-            exclude: /\.(html|css|js|jsx|img|jpg|png|gif)$/,
+            test: /\.scss$/,
+            use: ['style-loader', 'css-loader', 'sass-loader']
+        }, {
+            exclude: /\.(html|css|scss|js|jsx|img|jpg|png|gif)$/,
             loader: 'file-loader',
         }]
     },
