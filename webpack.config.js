@@ -12,9 +12,12 @@ module.exports = {
         path: resolve(__dirname, 'dist'),
         filename: "bundle.js"
     },
+    resolve: {
+        extensions: ['.js', '.jsx', '.json'],
+    },
     module: {
         rules: [{
-            test: /\.js$/,
+            test: /\.(js|jsx)$/,
             exclude: /node_modules/,
             use: {
                 loader: 'babel-loader',
@@ -35,7 +38,7 @@ module.exports = {
             test: /\.css$/,
             use: ['style-loader', 'css-loader']
         }, {
-            exclude: /\.(html|css|js|img|jpg|png|gif)$/,
+            exclude: /\.(html|css|js|jsx|img|jpg|png|gif)$/,
             loader: 'file-loader',
         }]
     },
